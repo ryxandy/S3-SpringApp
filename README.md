@@ -1,12 +1,12 @@
-# Welcome to my PokeAPI
-![Welcome](https://github.com/ryxandy/pokeapi/blob/main/poke.jpg)
+# Welcome to my Dockerized Spring API
+![Welcome](https://github.com/ryxandy/pokeapi/blob/main/aws icon.jpg)
 #                                                                        Tour into this application 
 ###                                                             Purpose, Technologies, Documentation, usage examples.
 
 
 
 #### ✏️ Overview:
-###### This a  Dockerized Java api rest created to practice my skills on S3.
+###### This a  Dockerized Java api rest created to practice my skills on S3, this time we are going learn how to upload a file to amazon s3 using code.
 
 
 #                 💻 Technologies:
