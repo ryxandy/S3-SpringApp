@@ -1,7 +1,8 @@
 # Welcome to my Dockerized Spring API
-<img src="https://github.com/ryxandy/S3-SpringApp/blob/main/aws%20icon.png">
-#                                                                        Tour into this application 
-###                                                             Purpose, Technologies, Documentation, usage examples.
+<img src="https://github.com/ryxandy/S3-SpringApp/blob/main/aws%20icon.png" width="500">
+
+### Tour into this application <img src="https://github.com/ryxandy/S3-SpringApp/blob/main/s3%20icon.png" width="25" height="25">
+### Purpose, Technologies, Documentation, usage examples.
 
 
 
@@ -30,7 +31,7 @@
 <img src="https://github.com/ryxandy/S3-SpringApp/blob/main/response.PNG">
 
 ## About the Docker side of the things
-<img src="https://github.com/ryxandy/S3-SpringApp/blob/main/docker%20icon.png">
+<img src="https://github.com/ryxandy/S3-SpringApp/blob/main/docker%20icon.png" width="500">
 
 ## Take a look into the DockerFile, build it and then run your docker image
 <img src="https://github.com/ryxandy/S3-SpringApp/blob/main/dockerfile.PNG">
