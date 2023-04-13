@@ -1,5 +1,5 @@
 # Welcome to my Dockerized Spring API
-![Welcome](https://github.com/ryxandy/S3-SpringApp/blob/main/aws icon.png)
+![Welcome]([https://github.com/ryxandy/S3-SpringApp/blob/main/aws icon.png](https://github.com/ryxandy/S3-SpringApp/blob/main/aws%20icon.png))
 #                                                                        Tour into this application 
 ###                                                             Purpose, Technologies, Documentation, usage examples.
 
