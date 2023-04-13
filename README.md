@@ -22,7 +22,7 @@
 
 ## Basic EndPoint: http://localhost:8080/api/file
 
-## Request EndPoint:
+## Request Example:
 ![EndPoints](https://github.com/ryxandy/pokeapi/blob/main/endpoints.PNG)
 
 
