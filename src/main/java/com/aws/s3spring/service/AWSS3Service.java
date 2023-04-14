@@ -38,11 +38,11 @@ public class AWSS3Service implements FileService{
 
         try {
             //Tenta fazer o put lá na aws, aqui passa o nome do bucket, o id dele, o arquivo e o metadata
-            s3client.putObject("devbaiano-bucket",key,file.getInputStream(), metadata);
+            s3client.putObject("insira aqui o nome do seu bucket",key,file.getInputStream(), metadata);
         }catch (IOException e){
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,"Ocorreu um erro durante o upload do seu arquivo :( ");
         }
         System.out.println("Processo finalizado com sucesso");
-        return "Seu arquivo foi enviado com sucesso, parabéns, você pode checar o seu bucket e conferir aqui: " + s3client.getUrl("devbaiano-bucket",key);
+        return "Seu arquivo foi enviado com sucesso, parabéns, você pode checar o seu bucket e conferir aqui: " + s3client.getUrl("insira aqui o nome do seu bucket",key);
     }
 }
