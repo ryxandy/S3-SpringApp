@@ -21,7 +21,7 @@ public class AWSS3Service implements FileService{
     public AmazonS3 s3client;
 
     @Override
-    public String uploadFile(MultipartFile file) {
+    public String uploadFile(MultipartFile file, String bucket) {
 
         System.out.println("Iniciando processo de envio de arquivo para o bucket-s3");
         //Pegando a extensão do arquivo a ser upado
@@ -30,7 +30,7 @@ public class AWSS3Service implements FileService{
         //String key = UUID.randomUUID().toString() + "." + extension;
         Date date = new Date();
 
-        String key = "Arquivo enviado via API " + date.getDate();
+        String key = "Arquivo enviado via API " + date.getDate() + "/" + date.getMonth() + "/" + date.getYear();
         //Criando metadata
         ObjectMetadata metadata = new ObjectMetadata();
             metadata.setContentLength(file.getSize());
@@ -38,11 +38,11 @@ public class AWSS3Service implements FileService{
 
         try {
             //Tenta fazer o put lá na aws, aqui passa o nome do bucket, o id dele, o arquivo e o metadata
-            s3client.putObject("insira aqui o nome do seu bucket",key,file.getInputStream(), metadata);
+            s3client.putObject(bucket,key,file.getInputStream(), metadata);
         }catch (IOException e){
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,"Ocorreu um erro durante o upload do seu arquivo :( ");
         }
         System.out.println("Processo finalizado com sucesso");
-        return "Seu arquivo foi enviado com sucesso, parabéns, você pode checar o seu bucket e conferir aqui: " + s3client.getUrl("insira aqui o nome do seu bucket",key);
+        return "Seu arquivo foi enviado com sucesso, parabéns, você pode checar o seu bucket e conferir aqui: " + s3client.getUrl(bucket,key);
     }
 }
